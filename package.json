@@ -7,11 +7,20 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "format": "eslint --fix . ",
+    "prepare": "husky"
   },
   "dependencies": {
+    "@nuxt/eslint": "^0.6.0",
     "nuxt": "^3.13.2",
     "vue": "latest",
     "vue-router": "latest"
+  },
+  "devDependencies": {
+    "husky": "^9.1.6",
+    "typescript": "^5.6.3",
+    "vue-tsc": "^2.1.6"
   }
 }
